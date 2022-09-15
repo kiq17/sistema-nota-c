@@ -48,17 +48,17 @@ int opcoes(){
         menu();
                 
     } else if (opcao == 2){
-        int aux = 0;
-        
+        int max = notas[0];
+    
         for(i=0; i < tam; i++){
-            if(notas[i] > notas[i + 1]){
-                aux = notas[i];
-            } else if (aux < notas[i]){
-                aux = notas[i];
+            if(notas[i] > max){
+                max = notas[i];
             }
         }
         
-        printf("%d \n", aux);
+        printf("Maior nota: ");
+        printf("%d \n", max);
+        menu();
         
     } else if (opcao == 3){
         
